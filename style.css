@@ -1,0 +1,135 @@
+/* --- Reset básico --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #fff; /* Fondo limpio */
+  color: #222; /* Texto oscuro */
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* --- Header --- */
+header {
+  background-color: #3b3930;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.2em;
+  margin-bottom: 15px;
+  letter-spacing: 2px;
+}
+
+/* --- Navegación --- */
+nav {
+  display: flex;
+  justify-content: center; /* 👈 Centrado */
+  flex-wrap: wrap; /* Para que en móvil se acomoden */
+  gap: 15px;
+}
+
+.btn-nav {
+  display: inline-block;
+  background-color: transparent;
+  border: 2px solid #000000; /* Bordes blancos */
+  color: #000000; /* Texto blanco visible sobre negro */
+  padding: 8px 18px;
+  border-radius: 6px;
+  font-size: 0.95em;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.btn-nav:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+/* --- Secciones --- */
+section {
+  padding: 40px 0;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.8em;
+  margin-bottom: 20px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+p {
+  font-size: 1em;
+  margin-bottom: 15px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* --- Portafolio --- */
+.portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.portfolio img {
+  width: 100%;
+  max-width: 280px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease;
+}
+
+.portfolio img:hover {
+  transform: scale(1.05);
+}
+
+/* --- Botones generales --- */
+button, .btn {
+  padding: 10px 20px;
+  font-size: 15px;
+  border: 2px solid #111;
+  border-radius: 6px;
+  background-color: transparent;
+  color: #111;
+  cursor: pointer;
+  margin: 10px 0;
+  transition: 0.3s ease;
+}
+
+button:hover, .btn:hover {
+  background-color: #111;
+  color: #fff;
+}
+
+/* --- Footer --- */
+footer {
+  background-color: #111;
+  color: #fff;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 30px;
+  font-size: 0.9em;
+}
+
+/* --- Responsive --- */
+@media (max-width: 900px) {
+  .portfolio img {
